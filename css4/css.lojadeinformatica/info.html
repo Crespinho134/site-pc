@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="icon" href="logo.png" type="image/x-icon">	
+   <title>Pikkau Gamer</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 1.3em;
+            margin: 10px 0;
+            font-style: italic;
+        }
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 30px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: background 0.3s ease, transform 0.3s ease;
+            border-radius: 5px;
+        }
+        nav ul li a:hover {
+            background-color: #ff4b2b;
+            transform: scale(1.05);
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 30px 0;
+        }
+        .main-content, .product-list {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        .promo {
+            background: linear-gradient(135deg, #ffeb3b, #ffec63);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            color: #333;
+        }
+        .promo h2 {
+            font-size: 2em;
+            margin-top: 0;
+        }
+        .promo .offer {
+            font-size: 1.3em;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        .promo .details {
+            font-size: 1.1em;
+            margin: 15px 0;
+        }
+        .company-info {
+            font-size: 1em;
+            line-height: 1.8;
+        }
+        .product {
+            background: #2b2b2b;
+            border: 1px solid #444;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        .product h2 {
+            font-size: 1.7em;
+            margin-top: 0;
+            color: #ff4b2b;
+        }
+        .product p {
+            margin: 15px 0;
+            color: #e0e0e0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            font-size: 0.9em;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer p {
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+            .container {
+                width: 95%;
+            }
+            nav ul li {
+                margin-right: 15px;
+            }
+            nav ul li a {
+                font-size: 1em;
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pikkau Gamer</h1>
+        <p>+FPS em toda compra!</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home" onclick="showContent('home')">Início</a></li>
+            <li><a href="#products" onclick="showContent('products')">Produtos</a></li>
+        </ul>
+    </nav>
+	<CENTER><img src="poster.png"></CENTER>
+	<CENTER><img src="banner2.png"></CENTER>
+	<CENTER><img src="banner1.jpg"></CENTER>
+    <div class="container">
+        <div id="home" class="main-content">
+            <h2>Sobre a Pikkau Informática</h2>
+            <div class="company-info">
+                <p>Fundada em 2020, a Pikkau Informática começou como um pequeno empreendimento dedicado a fornecer equipamentos de informática de alta qualidade para entusiastas e profissionais da tecnologia. Desde o início, nosso objetivo tem sido oferecer produtos que atendam às mais altas expectativas em termos de desempenho e durabilidade.</p>
+                <p>Com o tempo, expandimos nosso portfólio para incluir uma ampla gama de produtos, desde computadores de alto desempenho até periféricos inovadores. A Pikkau Informática é conhecida por seu compromisso com a excelência e pela atenção ao cliente, o que nos ajudou a ganhar a confiança e a lealdade de nossos clientes.</p>
+                <p>Hoje, continuamos a crescer e a inovar, sempre buscando oferecer as melhores soluções para suas necessidades tecnológicas. Agradecemos a todos que fizeram parte de nossa jornada e esperamos continuar a oferecer produtos e serviços excepcionais no futuro.</p>
+            </div>
+            <div class="promo">
+                <h2>Promoções Relâmpago!</h2>
+                <div class="offer">Desconto de 30% em Computadores Gamer!</div>
+                <div class="details">Aproveite o desconto especial em nossa linha de computadores gamer. Promoção válida até o final do mês!</div>
+            </div>
+            <div class="promo">
+                <h2>Oferta Imperdível!</h2>
+                <div class="offer">Teclado Mecânico RGB com 20% de desconto!</div>
+                <div class="details">Adquira um teclado mecânico com iluminação RGB e aproveite um desconto incrível. Corra, a oferta é por tempo limitado!</div>
+            </div>
+        </div>
+        <div id="products" class="product-list" style="display: none;">
+            <h2>Nossos Produtos</h2>
+            <div class="product">
+                <h2>Computador Gamer XYZ</h2>
+                <p><img src="pc.png" align="rigth" width="150" height="150"></p>
+                <p><strong>Preço:</strong> R$ 3.500,00</p>
+            </div>
+            <div class="product">
+                <h2>Teclado Mecânico RGB</h2>
+                <p><img src="tec.png" align="rigth" width="150" height="150"></p>
+                <p><strong>Preço:</strong> R$ 250,00</p>
+            </div>
+            <div class="product">
+                <h2>Monitor 27" Full HD</h2>
+                <p><img src="mon.png" align="rigth" width="150" height="150"></p>
+                <p><strong>Preço:</strong> R$ 1.200,00</p>
+            </div>
+            <!-- Adicione mais produtos conforme necessário -->
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Pikkau Gamer. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        function showContent(contentId) {
+            document.querySelectorAll('.main-content, .product-list').forEach(el => el.style.display = 'none');
+            document.getElementById(contentId).style.display = 'flex';
+        }
+    </script>
+</body>
+</html>
